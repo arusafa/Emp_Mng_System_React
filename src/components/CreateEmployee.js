@@ -37,7 +37,7 @@ export default function  CreateEmployee() {
             .then(res => console.log(res.data));
         
         navigate('/employees')
-        window.location.reload(false);
+        window.location.replace("https://tubular-tanuki-5b0ef2.netlify.app/employees")
     }
     
     return (
