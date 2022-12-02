@@ -35,7 +35,8 @@ export default function  CreateEmployee() {
         console.log("New Employee Added");
         axios.post(base_url, newEmployee)
             .then(res => console.log(res.data));
-        navigate('/add-employees');
+        
+        navigate('/');
         navigate('/employees')
     }
     
