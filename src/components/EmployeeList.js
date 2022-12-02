@@ -43,9 +43,8 @@ export default class EmployeeList extends Component {
                 })
 
                 this.setState({...this.state, employees: emp})
-                window.location('/employees');
             })
-            window.location.replace("https://tubular-tanuki-5b0ef2.netlify.app/employees")
+            
         }
         
         render() {

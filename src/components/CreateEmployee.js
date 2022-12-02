@@ -35,9 +35,6 @@ export default function  CreateEmployee() {
         console.log("New Employee Added");
         axios.post(base_url, newEmployee)
             .then(res => console.log(res.data));
-        
-        navigate('/employees')
-        window.location.replace("https://tubular-tanuki-5b0ef2.netlify.app/employees")
     }
     
     return (
