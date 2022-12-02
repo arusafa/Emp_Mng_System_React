@@ -62,10 +62,10 @@ export default class EmployeeList extends Component {
                 let emp = this.state.employees.filter(employees => {
                     return employees.id !== id
                 })
-
                 this.setState({...this.state, employees: emp})
+                NavigateToEmployee();
             });
-            NavigateToEmployee();
+            NavigateToHome();
         }
         
         render() {
