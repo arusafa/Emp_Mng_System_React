@@ -18,7 +18,7 @@ export default function  ViewEmployee() {
 }, []);
 
     const getEmployeeDataByID = async () => {
-        const result = await axios.get(`http://localhost:8000/api/emp/employees/${id}`);
+        const result = await axios.get(`https://comp3123-assignment-2.herokuapp.com/api/emp/employees/${id}`);
         setEmployee(result.data);
     }
 
