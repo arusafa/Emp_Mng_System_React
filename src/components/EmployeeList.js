@@ -6,7 +6,24 @@ import EmployeeDetails from './EmployeeDetails';
 import {Button, Table } from "react-bootstrap";
 //import { browserHistory } from 'react-router';
 //import { Redirect } from 'react-router';
-import { redirect } from "react-router-dom";
+//import { redirect } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
+
+
+function NavigateToEmployee() {
+    const navigate = useNavigate();
+    return (
+        navigate('/employees')
+    );
+}
+
+function NavigateToHome() {
+    const navigate = useNavigate();
+    return (
+        navigate('/')
+    );
+}
+
 
 export default class EmployeeList extends Component {
     
@@ -48,8 +65,8 @@ export default class EmployeeList extends Component {
 
                 this.setState({...this.state, employees: emp})
             });
-            redirect("/");
-            redirect("/employees")
+            NavigateToHome();
+            NavigateToEmployee();
         }
         
         render() {
