@@ -44,7 +44,7 @@ export default class EmployeeList extends Component {
                     return employees.id !== id
                 })
                 this.setState({...this.state, employees: emp})
-                redirect("/employees");
+                window.location.assign("/employees");
             });
             
         }
