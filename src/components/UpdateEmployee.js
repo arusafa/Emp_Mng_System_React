@@ -44,8 +44,9 @@ export default function  UpdateEmploye() {
         axios.put(`https://comp3123-assignment-2.herokuapp.com/api/emp/employees/${id}`, newEmployee)
             .then(res => console.log(res.data));
         
-        navigate('/'+id);
+        
         navigate('/employees')
+        window.location.reload(false);
         }
 
         return (
