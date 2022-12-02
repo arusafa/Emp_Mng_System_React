@@ -5,7 +5,8 @@ import API from './API';
 import EmployeeDetails from './EmployeeDetails';
 import {Button, Table } from "react-bootstrap";
 //import { browserHistory } from 'react-router';
-import { Redirect } from 'react-router';
+//import { Redirect } from 'react-router';
+import { redirect } from "react-router-dom";
 
 export default class EmployeeList extends Component {
     
@@ -47,7 +48,7 @@ export default class EmployeeList extends Component {
 
                 this.setState({...this.state, employees: emp})
             });
-            <Redirect to="/employees"/>
+            redirect("/employees")
         }
         
         render() {
