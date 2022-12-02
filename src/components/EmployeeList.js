@@ -4,7 +4,7 @@ import axios from 'axios';
 import API from './API';
 import EmployeeDetails from './EmployeeDetails';
 import {Button, Table } from "react-bootstrap";
-import { useNavigate } from 'react-router-dom';
+import { browserHistory } from 'react-router';
 
 
 export default class EmployeeList extends Component {
@@ -18,8 +18,6 @@ export default class EmployeeList extends Component {
             employees: []
         }
         }
-
-        navigate = useNavigate();
 
         componentDidMount (){
             this.API.getEmployees().then((response) => {
@@ -48,8 +46,10 @@ export default class EmployeeList extends Component {
                 })
 
                 this.setState({...this.state, employees: emp})
-                this.navigate('/');
-                this.navigate('/employees');
+                
+                browserHistory.push("/");
+                browserHistory.push("/employees");
+
             })
             
         }
