@@ -4,12 +4,12 @@ import React, {useEffect} from 'react';
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { Button } from "react-bootstrap";
-import {useNavigate} from 'react-router-dom';
+//import {useNavigate} from 'react-router-dom';
 
 
 export default function  UpdateEmploye() {
 
-    const navigate = useNavigate();
+    //const navigate = useNavigate();
 
     const [employee, setEmployee] = useState({});
     const {id} = useParams();
