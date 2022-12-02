@@ -44,7 +44,7 @@ export default function  UpdateEmploye() {
         axios.put(`https://comp3123-assignment-2.herokuapp.com/api/emp/employees/${id}`, newEmployee)
             .then(res => console.log(res.data));
         
-            window.location.replace("https://tubular-tanuki-5b0ef2.netlify.app/employees")
+            window.location.assign("https://tubular-tanuki-5b0ef2.netlify.app/employees");
         }
 
         return (
