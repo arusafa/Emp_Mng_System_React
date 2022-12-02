@@ -44,8 +44,8 @@ export default class EmployeeList extends Component {
 
                 this.setState({...this.state, employees: emp})
                 
-                window.location="/";
-                window.location.reload();
+                window.location('/')
+                window.location('/employees');
             })
         }
         
@@ -81,7 +81,7 @@ export default class EmployeeList extends Component {
                                                 <Button onClick={(e) => this.getEmployeeDataByID(emp._id)} className="btn btn-success">Update</Button>
                                             </Link>
 
-                                            <Link style={{marginRight:"8px"}} to={`update-employees/${emp._id}`}>
+                                            <Link style={{marginRight:"8px"}} to={`delete-employees/${emp._id}`}>
                                                 <Button onClick={(e) => this.deleteEmployeeDataByID(emp._id)} className="btn-danger">Delete</Button>
                                             </Link>
 

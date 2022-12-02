@@ -34,6 +34,7 @@ return (
                 <Route path={"add-employees"} element={<CreateEmployee/>}/>
                 <Route path={"employees/update-employees/:id"} element={<UpdateEmploye/>}/>
                 <Route path={"employees/view-employees/:id"} element={<ViewEmployee/>}/>
+                <Route path={"employees/delete-employees/:id"} element={<EmployeeList/>}/>
             </Routes>
             <Footer/>
         </div>
