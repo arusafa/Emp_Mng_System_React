@@ -29,8 +29,8 @@ return (
                 <Link to={"/"} className="btn btn-outline-danger w-25" style={{marginLeft:"180px", color:"white"}}>Logout</Link>
             </Navbar>
             <Routes>
-                <Route path="/" element={<Home/>}/>
-                <Route path="/employees" element={<EmployeeList/>}/>
+                {/* <Route path="/" element={<Home/>}/> */}
+                <Route path="/" element={<EmployeeList/>}/>
                 <Route path={"add-employees"} element={<CreateEmployee/>}/>
                 <Route path={"employees/update-employees/:id"} element={<UpdateEmploye/>}/>
                 <Route path={"employees/view-employees/:id"} element={<ViewEmployee/>}/>
