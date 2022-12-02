@@ -4,8 +4,8 @@ import axios from 'axios';
 import API from './API';
 import EmployeeDetails from './EmployeeDetails';
 import {Button, Table } from "react-bootstrap";
-import { browserHistory } from 'react-router';
-
+//import { browserHistory } from 'react-router';
+import { Redirect } from 'react-router';
 
 export default class EmployeeList extends Component {
     
@@ -46,12 +46,8 @@ export default class EmployeeList extends Component {
                 })
 
                 this.setState({...this.state, employees: emp})
-                
-                browserHistory.push("/");
-                browserHistory.push("/employees");
-
-            })
-            
+            });
+            <Redirect to="/employees"/>
         }
         
         render() {
