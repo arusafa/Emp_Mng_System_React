@@ -65,7 +65,6 @@ export default class EmployeeList extends Component {
 
                 this.setState({...this.state, employees: emp})
             });
-            NavigateToHome();
             NavigateToEmployee();
         }
         
