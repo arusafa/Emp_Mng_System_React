@@ -4,7 +4,6 @@ import axios from 'axios';
 import API from './API';
 import EmployeeDetails from './EmployeeDetails';
 import {Button, Table } from "react-bootstrap";
-import { redirect } from "react-router-dom";
 
 export default class EmployeeList extends Component {
     
