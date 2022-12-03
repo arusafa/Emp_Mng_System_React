@@ -1,6 +1,5 @@
 import {Navbar, Nav} from 'react-bootstrap';
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
-
 import CreateEmployee from "./CreateEmployee";
 import EmployeeList from "./EmployeeList";
 import Home from "./Home";
@@ -10,6 +9,8 @@ import ViewEmployee from "./ViewEmployee";
 import SignUp from "./SignUp";
 import LogIn from "./LogIn";
 import React, {useState} from "react";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Navigation() {
 
@@ -49,7 +50,20 @@ return (
             </Routes>
             <Footer/>
         </div>
+        <ToastContainer
+        position="top-center"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        />
     </Router>
+    
     );
 }
 
