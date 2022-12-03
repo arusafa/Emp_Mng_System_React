@@ -1,3 +1,8 @@
+# Deployed on = [https://peppy-bombolone-a7834e.netlify.app/]
+
+# employees = [https://peppy-bombolone-a7834e.netlify.app/employees]
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
