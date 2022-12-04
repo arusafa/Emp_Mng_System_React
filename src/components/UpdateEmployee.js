@@ -134,11 +134,7 @@ export default function  UpdateEmploye() {
                 <div style={{margin:"20px"}} className="py-4">
                     <h1>Employee ID: {id}</h1>
                 </div>
-                <div style={{margin:"20px"}}>
-                    <Link className="btn btn-warning" to="/employees">
-                        <Button>Back to Employee List</Button>
-                    </Link>
-                </div>
+
                 <form onSubmit={e => handleSubmit(onSubmit(e))}>
                     <div className="form-group d-block">
                         <label>First Name: </label>
