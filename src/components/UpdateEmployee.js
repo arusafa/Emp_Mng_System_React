@@ -92,7 +92,7 @@ export default function  UpdateEmploye() {
     }
 
     const getEmployeeDataByID = async () => {
-        const result = await axios.get(`https://backend-assignment2-comp3123.herokuapp.com/api/emp/employees/${id}`);
+        const result = await axios.get(`https://comp3123-assignment2-backend.herokuapp.com/api/emp/employees/${id}`);
         setEmployee(result.data);
     }
     
@@ -119,7 +119,7 @@ export default function  UpdateEmploye() {
                     notifyErrorEmailFormat();
                 }
             else {
-                axios.put(`https://backend-assignment2-comp3123.herokuapp.com/api/emp/employees/${id}`, newEmployee)
+                axios.put(`https://comp3123-assignment2-backend.herokuapp.com/api/emp/employees/${id}`, newEmployee)
                 .then(res => {
                     notifySuccess();
                     navigate('/employees');

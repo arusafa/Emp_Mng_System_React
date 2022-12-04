@@ -27,7 +27,7 @@ export default class EmployeeList extends Component {
 
         // Get Employee Data by ID
         getEmployeeDataByID = (id) => {
-            axios.get(`https://backend-assignment2-comp3123.herokuapp.com/api/emp/employees/${id}`)
+            axios.get(`https://comp3123-assignment2-backend.herokuapp.com/api/emp/employees/${id}`)
             .then(res =>{
                 console.log(res.data)
             })
@@ -35,7 +35,7 @@ export default class EmployeeList extends Component {
 
             //Delete Employee Data By ID
         deleteEmployeeDataByID = (id) => {
-            axios.delete(`https://backend-assignment2-comp3123.herokuapp.com/api/emp/employees/${id}`)
+            axios.delete(`https://comp3123-assignment2-backend.herokuapp.com/api/emp/employees/${id}`)
             .then(res =>  { 
                 console.log(res.data+" The " +id + " has been deleted");
                 let emp = this.state.employees.filter(employees => {
