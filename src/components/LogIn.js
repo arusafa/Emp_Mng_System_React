@@ -13,7 +13,7 @@ export default function LogIn() {
     const notifySuccess = () => toast("User Logged-In Successfully!")
     
     const notifyError = () => toast.warn('Please check again the email!', {
-        position: "top-right",
+        position: "bottom-right",
         autoClose: 4000,
         hideProgressBar: false,
         closeOnClick: true,
@@ -24,7 +24,7 @@ export default function LogIn() {
         });
     
     const notifyErrorUsername = () => toast.error('Username cannot be empty', {
-        position: "top-center",
+        position: "bottom-right",
         autoClose: 4000,
         hideProgressBar: false,
         closeOnClick: true,
@@ -35,7 +35,7 @@ export default function LogIn() {
         });;
 
         const notifyErrorPassword = () => toast.error('Password cannot be empty', {
-            position: "top-center",
+            position: "bottom-right",
             autoClose: 4000,
             hideProgressBar: false,
             closeOnClick: true,
@@ -46,7 +46,7 @@ export default function LogIn() {
             });;
             
         const notifyErrorEmail = () => toast.error('Email cannot be empty', {
-            position: "top-center",
+            position: "bottom-right",
             autoClose: 4000,
             hideProgressBar: false,
             closeOnClick: true,
@@ -57,7 +57,7 @@ export default function LogIn() {
             });;
     
         const notifyErrorEmailFormat = () => toast.error('Email format is incorrect', {
-            position: "top-center",
+            position: "bottom-right",
             autoClose: 4000,
             hideProgressBar: false,
             closeOnClick: true,

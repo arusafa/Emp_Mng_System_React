@@ -24,7 +24,7 @@ export default function SignUp() {
         });
     
     const notifyErrorUsername = () => toast.error('Username cannot be empty', {
-        position: "top-center",
+        position: "top-right",
         autoClose: 4000,
         hideProgressBar: false,
         closeOnClick: true,
@@ -35,7 +35,7 @@ export default function SignUp() {
         });;
 
         const notifyErrorPassword = () => toast.error('Password cannot be empty', {
-            position: "top-center",
+            position: "top-right",
             autoClose: 4000,
             hideProgressBar: false,
             closeOnClick: true,
@@ -46,7 +46,7 @@ export default function SignUp() {
             });;
             
         const notifyErrorEmail = () => toast.error('Email cannot be empty', {
-            position: "top-center",
+            position: "top-right",
             autoClose: 4000,
             hideProgressBar: false,
             closeOnClick: true,
@@ -57,7 +57,7 @@ export default function SignUp() {
             });;
     
         const notifyErrorEmailFormat = () => toast.error('Email format is incorrect', {
-            position: "top-center",
+            position: "top-right",
             autoClose: 4000,
             hideProgressBar: false,
             closeOnClick: true,
