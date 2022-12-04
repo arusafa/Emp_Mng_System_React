@@ -12,7 +12,7 @@ export default function SignUp() {
 
     const notifySuccess = () => toast("User Signed-Up Successfully!")
 
-    const notifyError = () => toast.warn('Please check again the email!', {
+    const notifyError = () => toast.warn('Please check again!', {
         position: "top-right",
         autoClose: 4000,
         hideProgressBar: false,
@@ -71,7 +71,7 @@ export default function SignUp() {
 
     const navigate = useNavigate();
     
-    const base_url = 'https://comp3123-assignment2-backend.herokuapp.com/api/user/signup';
+    const base_url = 'https://comp3123-assignment2-userback.herokuapp.com/api/user/signup';
     
     const [user, setUser] = useState({
         username: '',
