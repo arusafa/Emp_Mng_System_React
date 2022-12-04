@@ -5,11 +5,6 @@ import API from './API';
 import EmployeeDetails from './EmployeeDetails';
 import {Button, Table } from "react-bootstrap";
 
-import {toast} from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import { ToastContainer } from 'react-toastify';
-
-const notifySuccess = () => toast("Employee Deleted Successfully!")
 export default class EmployeeList extends Component {
     
     constructor(props) {
@@ -42,13 +37,13 @@ export default class EmployeeList extends Component {
         deleteEmployeeDataByID = (id) => {
             axios.delete(`https://comp3123-assignment2-backend.herokuapp.com/api/emp/employees/${id}`)
             .then(res =>  { 
-                notifySuccess();
                 console.log(res.data+" The " +id + " has been deleted");
                 let emp = this.state.employees.filter(employees => {
                     return employees.id !== id
                 })
                 this.setState({...this.state, employees: emp})
-                window.location.assign("/employees");
+                alert("The " +id + " has been deleted");
+                window.location.reload();
             });
         }
         
@@ -102,7 +97,6 @@ export default class EmployeeList extends Component {
                                 </div>
                             </div>
                         </div>
-                        <ToastContainer />
                     </div>
             )
         }
