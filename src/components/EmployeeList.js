@@ -43,7 +43,7 @@ export default class EmployeeList extends Component {
                 })
                 this.setState({...this.state, employees: emp})
                 alert("The " +id + " has been deleted");
-                window.location.reload();
+                window.location.assign("/employees");
             });
         }
         
