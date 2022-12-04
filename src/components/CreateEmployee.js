@@ -10,13 +10,13 @@ import { useForm } from "react-hook-form";
 
 export default function  CreateEmployee() {
 
-    const {register,handleSubmit} = useForm();
+    const {register,formState: { errors },handleSubmit} = useForm();
 
     const notifySuccess = () => toast("Employee Created Successfully!")
     
     const notifyError = () => toast.warn('Please check again the email!', {
         position: "top-right",
-        autoClose: 2000,
+        autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -134,6 +134,9 @@ export default function  CreateEmployee() {
                                     <input className="form-control" placeholder=""
                                     {...register("first_name", { required: true })}
                                     onChange={e => handleInputChange(e)}/>
+                                    <error>
+                                        {errors.first_name?.type === "required" && "Name is required"}
+                                    </error> 
                                 </div>
 
                                 <div className="form-group">
