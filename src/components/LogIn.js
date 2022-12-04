@@ -71,7 +71,7 @@ export default function LogIn() {
 
     const navigate = useNavigate();
     
-    const base_url = 'https://comp3123-assignment2-backend.herokuapp.com/api/user/login';
+    const base_url = 'https://backend-assignment2-comp3123.herokuapp.com/api/user/login';
     
     const [user, setUser] = useState({
         username: '',

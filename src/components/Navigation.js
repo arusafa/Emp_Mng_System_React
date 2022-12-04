@@ -14,15 +14,11 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function Navigation() {
 
-    //const nativageTo = useNavigate();
-    const[navigate, setNavigate] = useState(false);
+    const[setNavigate] = useState(false);
     const Logout = () => {
 
         localStorage.removeItem('login');
         setNavigate(true);
-    }
-    if (navigate) {
-        //nativageTo("/login")
     }
    
 return (

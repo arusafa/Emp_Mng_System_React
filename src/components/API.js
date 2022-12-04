@@ -3,7 +3,7 @@ import axios from "axios";
 export default class API {
     constructor() {
         this.axios = axios.create({
-            baseURL: "https://comp3123-assignment2-backend.herokuapp.com/api/emp",
+            baseURL: "https://backend-assignment2-comp3123.herokuapp.com/api/emp",
             timeout: 1000,
             headers: {"Acsess-Control-Allow-Origin": "*"}
         });
