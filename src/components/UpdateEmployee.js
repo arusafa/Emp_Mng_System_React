@@ -92,7 +92,7 @@ export default function  UpdateEmploye() {
     }
 
     const getEmployeeDataByID = async () => {
-        const result = await axios.get(`https://comp3123-assignment2-backend.herokuapp.com/api/emp/employees/${id}`);
+        const result = await axios.get(`https://comp3123-assignment2-backend.onrender.com/api/emp/employees/${id}`);
         setEmployee(result.data);
     }
     
