@@ -71,7 +71,7 @@ export default function SignUp() {
 
     const navigate = useNavigate();
     
-    const base_url = 'https://comp3123-assignment2-backend.herokuapp.com/api/user/signup';
+    const base_url = 'https://comp3123-assignment2-backend.onrender.com/api/user/signup';
     
     const [user, setUser] = useState({
         username: '',
