@@ -70,7 +70,7 @@ export default function  CreateEmployee() {
             })
     
     const navigate = useNavigate();
-    const base_url = 'https://comp3123-assignment2-backend.herokuapp.com/api/emp/employees';
+    const base_url = 'https://comp3123-assignment2-backend.onrender.com/api/emp/employees';
     
 
     const [employee, setEmployee] = useState({
